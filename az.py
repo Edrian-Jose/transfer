@@ -971,6 +971,7 @@ class Azure(Machinery):
         else:
             vmss_vm_profile = models.VirtualMachineScaleSetVMProfile(
                 storage_profile=vmss_storage_profile,
+                os_profile=vmss_os_profile,
                 network_profile=vmss_network_profile,
                 priority=models.VirtualMachinePriorityTypes.REGULAR,
             )
